@@ -18,6 +18,8 @@ add_dependencies(${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME} PUBLIC
 	${CMAKE_SOURCE_DIR}/Algorithms
+	${CMAKE_SOURCE_DIR}/Utils
+	
 )
 
 
@@ -32,8 +34,5 @@ target_link_libraries(${PROJECT_NAME}
 	
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC Utils)
-
-target_link_directories(${PROJECT_NAME} PUBLIC Utils/)
 
 

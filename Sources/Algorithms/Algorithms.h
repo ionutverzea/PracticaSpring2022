@@ -23,7 +23,7 @@ namespace Algo {
 		Red
 	};
 	bool ALGORITHMS_API Single_color_channel(const cv::Mat& inImage, cv::Mat& outImage, ColorChannel colorCh = ColorChannel::Green);
-	bool ALGORITHMS_API Custom_gray_shades(const cv::Mat& inImage, cv::Mat& outImage);
+	bool ALGORITHMS_API Custom_gray_shades(const cv::Mat& inImage, cv::Mat& outImage, int conversionFactor);
 
 	enum FilterName
 	{
