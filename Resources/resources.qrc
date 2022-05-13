@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>C:/Users/pinti/Desktop/icons/exit (1).png</file>
+        <file>C:/Users/pinti/Desktop/icons/openfile.svg.png</file>
+        <file>C:/Users/pinti/Desktop/icons/save.png</file>
+        <file>License.txt</file>
+        <file>Diffnes.qss</file>
+    </qresource>
+</RCC>
