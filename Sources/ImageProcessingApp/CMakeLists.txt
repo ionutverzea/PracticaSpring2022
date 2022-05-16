@@ -8,6 +8,16 @@ set( AppSources
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
+#======================= INCLUSION OF Qt =======================#
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_PREFIX_PATH $ENV{QTDIR})
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Widgets REQUIRED)
+find_package(OpenCV REQUIRED)
+
+
 
 add_executable(${PROJECT_NAME} ${AppSources})
 
@@ -28,6 +38,7 @@ target_link_directories(${PROJECT_NAME} PUBLIC
 )
 
 target_link_libraries(${PROJECT_NAME}
+	Qt5::Widgets
 	Algorithms.lib
 	Utils.lib
 	${OpenCV_LIBS}

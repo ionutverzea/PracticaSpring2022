@@ -9,14 +9,12 @@
 int main()
 {
 	//WORK IN PROGRESS!! 
-	///Am testat daca merge functia din libraria Utils
-	if (!Utils::WriteMessage())
-		std::cout << "FAILURE: method did not succeded!";
 	
 
 	cv::Mat inImage;
 	std::string path = "..\\..\\PracticaSpring2022\\Resources\\trollhunters.jpg";
 	inImage = imread(path, cv::IMREAD_COLOR);
+	
 
 	cv::Mat outImage;
 
@@ -33,8 +31,8 @@ int main()
 	std::cin >> option;
 	std::cout << std::endl;*/
 
-	Algo::Single_color_channel(inImage, outImage);
-	Algo::DisplayImage(outImage, Algo::FilterName::singleColorChannel);
+	Algo::Averaging(inImage, outImage);
+	Algo::DisplayImage(outImage, Algo::FilterName::averaging);
 
 	return 0;
 }
